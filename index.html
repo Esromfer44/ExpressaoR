@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Validação de Campos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <form>
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="text" id="dataNascimento" value="01/01/2000" placeholder="dd/mm/aaaa ou dd/mm/aa">
+    <button type="button" onclick="validarDataNascimento()">Validar</button><br><br>
+
+    <label for="cpf">CPF (jMakWiFi):</label>
+    <input type="text" id="cpf" placeholder="xxx.xxx.xxx-xx">
+    <button type="button" onclick="validarCPF()">Validar</button><br><br>
+
+    <label for="matriculaAluno">Número de matrícula de um aluno:</label>
+    <input type="text" id="matriculaAluno" placeholder="IFTM-xxx/xxx-yy ou iftm-xxx/xxx-yy">
+    <button type="button" onclick="validarMatriculaAluno()">Validar</button><br><br>
+
+    <label for="codigoDisciplina">Código de uma disciplina do IFTM (jMakWiFi):</label>
+    <input type="text" id="codigoDisciplina" placeholder="MT-xx.xxx-IFTM">
+    <button type="button" onclick="validarCodigoDisciplina()">Validar</button><br><br>
+
+    <label for="codigoDisciplinaV2">Código de uma disciplina do IFTM (versão 2) (jMakWiFi):</label>
+    <input type="text" id="codigoDisciplinaV2" placeholder="MT-xx.xxx-IFTM">
+    <button type="button" onclick="validarCodigoDisciplinaV2()">Validar</button><br><br>
+
+    <label for="codigoDisciplinaV3">Código de uma disciplina do IFTM (versão 3):</label>
+    <input type="text" id="codigoDisciplinaV3" placeholder="MT-xx.xxx-IFTM">
+    <button type="button" onclick="validarCodigoDisciplinaV3()">Validar</button><br><br>
+
+    <label for="nomeCampus">Nome de campus do IFTM:</label>
+    <input type="text" id="nomeCampus" placeholder="IFTM campus Uberlândia ou IFTM campus Uberlândia Centro">
+    <button type="button" onclick="validarNomeCampus()">Validar</button><br><br>
+
+    <label for="telefone">Telefone (jMakWiFi):</label>
+    <input type="text" id="telefone" placeholder="+yy(xx)xxxxx-xxxx">
+    <button type="button" onclick="validarTelefone()">Validar</button><br><br>
+
+    <label for="telefoneV2">Telefone (versão 2):</label>
+    <input type="text" id="telefoneV2" placeholder="(xx)zyyyyy-wwww">
+    <button type="button" onclick="validarTelefoneV2()">Validar</button><br><br>
+
+    <label for="altura">Altura de uma pessoa:</label>
+    <input type="text" id="altura" placeholder="x,xz ou x.xz">
+    <button type="button" onclick="validarAlturaPessoa()">Validar</button><br><br>
+
+    <label for="faturamento">Faturamento anual de uma empresa:</label>
+    <input type="text" id="faturamento" placeholder="R$0,00 até R$999.999.999.999,99">
+    <button type="button" onclick="validarFaturamento()">Validar</button><br><br>
+
+    <label for="cronometro">Cronômetro (jMakWiFi):</label>
+    <input type="text" id="cronometro" placeholder="HH:MM:SS:CC">
+    <button type="button" onclick="validarCronometro()">Validar</button><br><br>
+  </form>
+</body>
+</html>
